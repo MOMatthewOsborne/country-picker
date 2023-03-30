@@ -350,13 +350,13 @@ const anna2ndCountry = document.getElementById("anna-b");
 anna2ndCountry.innerHTML = `Your second country is ${countryBForAnna}`;
 
 const recettesB = document.getElementById("link-b");
-recettesB.innerHTML = `<a href =https://www.google.com/search?q=recette+${countryBForAnna}> Recettes de ${countryBForAnna}</a>`;
+recettesB.innerHTML = `<a target="_blank" href =https://www.google.com/search?q=recette+${countryBForAnna}> Recettes de ${countryBForAnna}</a>`;
 
 const anna3rdCountry = document.getElementById("anna-c");
 anna3rdCountry.innerHTML = `Your third country is ${countryCForAnna}`;
 
 const recettesC = document.getElementById("link-c");
-recettesC.innerHTML = `<a href =https://www.google.com/search?q=recette+${countryCForAnna}> Recettes de ${countryCForAnna}</a>`;
+recettesC.innerHTML = `<a target="_blank" href =https://www.google.com/search?q=recette+${countryCForAnna}> Recettes de ${countryCForAnna}</a>`;
 
 const showContent = () => {
   document.querySelector("button").style.display = "none";
