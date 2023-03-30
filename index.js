@@ -349,10 +349,16 @@ cityXBox.innerHTML = `A city starting with X is ${cityForX} `;
 const anna2ndCountry = document.getElementById("anna-b");
 anna2ndCountry.innerHTML = `Your second country is ${countryBForAnna}`;
 
+const recettesB = document.getElementById("link-b");
+recettesB.innerHTML = `<a href =https://www.google.com/search?q=recette+${countryBForAnna}> Recettes de ${countryBForAnna}</a>`;
+
 const anna3rdCountry = document.getElementById("anna-c");
 anna3rdCountry.innerHTML = `Your third country is ${countryCForAnna}`;
 
-showContent = () => {
+const recettesC = document.getElementById("link-c");
+recettesC.innerHTML = `<a href =https://www.google.com/search?q=recette+${countryCForAnna}> Recettes de ${countryCForAnna}</a>`;
+
+const showContent = () => {
   document.querySelector("button").style.display = "none";
   document.querySelector("header").style.display = "none";
   document.querySelector("#content").style.display = "block";
