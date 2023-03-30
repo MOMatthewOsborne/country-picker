@@ -1,3 +1,15 @@
 #content {
   display: none;
 }
+
+body {
+  text-align: center;
+}
+
+p {
+  font-size: 25px;
+}
+
+button {
+  font-size: 25px;
+}

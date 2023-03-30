@@ -327,30 +327,33 @@ const countriesStartingWithC = [
 ];
 
 let cityForW = cityW[Math.floor(Math.random() * cityW.length)];
-console.log(cityForW);
 
 let cityForX = cityX[Math.floor(Math.random() * cityX.length)];
-console.log(cityForX);
 
 let countryBForAnna =
   countriesStartingWithB[
     Math.floor(Math.random() * countriesStartingWithB.length)
   ];
-console.log(countryBForAnna);
+
 let countryCForAnna =
   countriesStartingWithC[
     Math.floor(Math.random() * countriesStartingWithC.length)
   ];
-console.log(countryCForAnna);
 
 const cityWBox = document.getElementById("city-w");
-cityWBox.innerHTML = `Your city is ${cityForW}`;
+cityWBox.innerHTML = `A city starting with W is ${cityForW}`;
 
 const cityXBox = document.getElementById("city-x");
-cityXBox.innerHTML = `Your city is ${cityForX} `;
+cityXBox.innerHTML = `A city starting with X is ${cityForX} `;
 
 const anna2ndCountry = document.getElementById("anna-b");
-anna2ndCountry.innerHTML = `Anna's second country is ${countryBForAnna}`;
+anna2ndCountry.innerHTML = `Your second country is ${countryBForAnna}`;
 
 const anna3rdCountry = document.getElementById("anna-c");
-anna3rdCountry.innerHTML = `Anna's third country is ${countryCForAnna}`;
+anna3rdCountry.innerHTML = `Your third country is ${countryCForAnna}`;
+
+showContent = () => {
+  document.querySelector("button").style.display = "none";
+  document.querySelector("header").style.display = "none";
+  document.querySelector("#content").style.display = "block";
+};
